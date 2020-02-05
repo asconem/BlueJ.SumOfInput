@@ -1,8 +1,8 @@
 /**
- * Write a description of class SumOfInput here.
+ * This program returns the sum of numbers 1 to n, where n is represented by the parameter numberToSum
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Matthew Ascone)
+ * @version (2/5/20)
  */
 public class SumOfInput
 {
@@ -17,9 +17,12 @@ public class SumOfInput
         // initialise instance variables
         sum = 0;
     }
-    
-    public Integer oneToNumber(Integer numberToSum){
 
+    public Integer oneToNumber(Integer numberToSum){
+      sum = 0;
+      for (int i = 1; i <= numberToSum; i++) {
+        sum += i;
+      }
         return sum;
     }
 
